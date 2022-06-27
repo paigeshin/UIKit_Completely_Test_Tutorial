@@ -10,12 +10,14 @@ import Foundation
 protocol Router {
     typealias AnswerCallback = (String) -> Void
     func routeTo(question: String, answerCallback: @escaping(String) -> Void)
+    func routeTo(result: [String: String])
 }
 
 final class Flow {
     
     private let router: Router
     private let questions: [String]
+    private var result: [String: String] = [:]
     
     init(questions: [String], router: Router) {
         self.questions = questions
@@ -24,17 +26,25 @@ final class Flow {
     
     func start() {
         if let firstQuestion = questions.first {
-            router.routeTo(question: firstQuestion, answerCallback: routeNext(from: firstQuestion))
+            router.routeTo(question: firstQuestion, answerCallback: nextCallback(from: firstQuestion))
+        } else {
+            router.routeTo(result: result)
         }
     }
     
-    private func routeNext(from question: String) -> Router.AnswerCallback {
-        return { [weak self] _ in
-            guard let strongSelf = self else { return }
-            if let currentQuestionIndex = strongSelf.questions.index(of: question) {
-                if currentQuestionIndex + 1 < strongSelf.questions.count {        let nextQuestion = strongSelf.questions[currentQuestionIndex + 1]
-                    strongSelf.router.routeTo(question: nextQuestion, answerCallback: strongSelf.routeNext(from: nextQuestion))
-                }
+    private func nextCallback(from question: String) -> Router.AnswerCallback {
+        return { [weak self] in self?.routeNext(question, $0) }
+    }
+    
+    private func routeNext(_ question: String, _ answer: String) {
+        if let currentQuestionIndex = questions.index(of: question) {
+            result[question] = answer
+            let nextQuestionIndex = currentQuestionIndex + 1
+            if nextQuestionIndex < questions.count {
+                let nextQuestion = questions[nextQuestionIndex]
+                router.routeTo(question: nextQuestion, answerCallback: nextCallback(from: nextQuestion))
+            } else {
+                router.routeTo(result: result)
             }
         }
     }
