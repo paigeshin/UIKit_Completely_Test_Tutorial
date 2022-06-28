@@ -90,14 +90,14 @@ class FlowTest: XCTestCase {
     }
     
     // MARK: Helpers - You can make it a separate file
-    func makeSUT(questions: [String]) -> Flow {
+    func makeSUT(questions: [String]) -> Flow<String, String, RouterSpy> {
         return Flow(questions: questions, router: router)
     }
     
     class RouterSpy: Router {
 
         var routedQuestions: [String] = []
-        var answerCallback: Router.AnswerCallback = { _ in }
+        var answerCallback: (Answer) -> Void = { _ in }
         var routedResult: [String: String]? = nil
         
         func routeTo(question: String, answerCallback: @escaping (String) -> Void) {
