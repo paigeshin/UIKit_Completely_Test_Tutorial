@@ -16,6 +16,7 @@
 		C455AEF22869F107000D4C64 /* QuestionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455AEF12869F107000D4C64 /* QuestionViewControllerTest.swift */; };
 		C455AEF42869F176000D4C64 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455AEF32869F176000D4C64 /* QuestionViewController.swift */; };
 		C455AEF62869F1EB000D4C64 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C455AEF52869F1EB000D4C64 /* QuestionViewController.xib */; };
+		C455AEF8286AEC91000D4C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455AEF7286AEC91000D4C64 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C455AEF12869F107000D4C64 /* QuestionViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTest.swift; sourceTree = "<group>"; };
 		C455AEF32869F176000D4C64 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		C455AEF52869F1EB000D4C64 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		C455AEF7286AEC91000D4C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C42ED5F928647EBF00E0F04F /* AppDelegate.swift */,
+				C455AEF7286AEC91000D4C64 /* SceneDelegate.swift */,
 				C455AEF32869F176000D4C64 /* QuestionViewController.swift */,
 				C455AEF52869F1EB000D4C64 /* QuestionViewController.xib */,
 				C42ED60228647EC100E0F04F /* Assets.xcassets */,
@@ -260,6 +263,7 @@
 			files = (
 				C455AEF42869F176000D4C64 /* QuestionViewController.swift in Sources */,
 				C42ED5FA28647EBF00E0F04F /* AppDelegate.swift in Sources */,
+				C455AEF8286AEC91000D4C64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
