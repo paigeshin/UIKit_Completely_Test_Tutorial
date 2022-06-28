@@ -17,14 +17,38 @@ class ResultsViewControllerTest: XCTestCase {
     
     func test_viewDidLoad_rendersAnswers() {
         XCTAssertEqual(makeSUT(answers: []).tableView.numberOfRows(inSection: 0), 0)
-        XCTAssertEqual(makeSUT(answers: [makeDummyAnswer()]).tableView.numberOfRows(inSection: 0), 1)
+        XCTAssertEqual(makeSUT(answers: [makeAnswer()]).tableView.numberOfRows(inSection: 0), 1)
     }
     
-    func test_viewDidLoad_withCorrectAnswer_renderCorrectAnswerCall() {
-        let sut = makeSUT(answers: [PresentableAnswer(isCorrect: true)])
-        let indexPath = IndexPath(row: 0, section: 0)
-        let cell = sut.tableView.dataSource?.tableView(sut.tableView, cellForRowAt: indexPath) as? CorrectAnswerCell
+    func test_viewDidLoad_withCorrectAnswer_renderCorrectAnswerCell() {
+        let sut = makeSUT(answers: [makeAnswer()])
+        let cell = sut.tableView.cell(at: 0) as? CorrectAnswerCell
         XCTAssertNotNil(cell)
+    }
+    
+    func test_viewDidLoad_withCorrectAnswer_configuresCell() {
+        let answer = makeAnswer(question: "Q1", answer: "A1")
+        let sut = makeSUT(answers: [answer])
+        let cell = sut.tableView.cell(at: 0) as? CorrectAnswerCell
+        XCTAssertNotNil(cell)
+        XCTAssertEqual(cell?.questionLabel.text, "Q1")
+        XCTAssertEqual(cell?.answerLabel.text, "A1")
+    }
+    
+    func test_viewDidLoad_withWrongAnswer_renderWrongAnswerCell() {
+        let sut = makeSUT(answers: [makeAnswer(wrongAnswer: "")])
+        let cell = sut.tableView.cell(at: 0) as? WrongAnswerCell
+        XCTAssertNotNil(cell)
+    }
+    
+    func test_viewDidLoad_withWrongAnswer_configuresCell() {
+        let answer = makeAnswer(question: "Q1", answer: "A1", wrongAnswer: "wrong")
+        let sut = makeSUT(answers: [answer])
+        let cell = sut.tableView.cell(at: 0) as? WrongAnswerCell
+        XCTAssertNotNil(cell)
+        XCTAssertEqual(cell?.questionLabel.text, "Q1")
+        XCTAssertEqual(cell?.correctAnswerLabel.text, "A1")
+        XCTAssertEqual(cell?.wrongAnswerLabel.text, "wrong")
     }
     
     // MARK: Helpers
@@ -34,8 +58,8 @@ class ResultsViewControllerTest: XCTestCase {
         return sut
     }
     
-    func makeDummyAnswer() -> PresentableAnswer {
-        return PresentableAnswer(isCorrect: false)
+    func makeAnswer(question: String = "", answer: String = "", wrongAnswer: String? = nil) -> PresentableAnswer {
+        return PresentableAnswer(question: question, answer: answer, wrongAnswer: wrongAnswer)
     }
     
 }
