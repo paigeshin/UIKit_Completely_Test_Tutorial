@@ -9,8 +9,8 @@ import UIKit
 
 class QuestionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var headerLabel: UILabel!
-    private var question: String = ""
-    private var options: [String] = []
+    private(set) var question: String = ""
+    private(set) var options: [String] = []
     @IBOutlet weak var tableView: UITableView!
     
     private let resueIdentifier = "Cell"
