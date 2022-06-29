@@ -8,6 +8,10 @@
 import Foundation
 
 public struct Result<Question: Hashable, Answer> {
-    let answers: [Question: Answer]
-    let score: Int
+    public let answers: [Question: Answer]
+    public let score: Int
+    public init(answers: [Question: Answer], score: Int) {
+        self.answers = answers
+        self.score = score
+    }
 }
