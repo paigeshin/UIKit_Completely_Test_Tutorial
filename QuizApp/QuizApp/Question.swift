@@ -17,7 +17,6 @@ enum Question<T: Hashable>: Hashable {
             return value.hashValue
         case .multipleAnswer(let value):
             return value.hashValue
-        default: return 0
         }
     }
     
@@ -27,7 +26,7 @@ enum Question<T: Hashable>: Hashable {
             return a == b
         case (.multipleAnswer(let a), .multipleAnswer(let b)):
             return a == b
-        default: return false
+        default: return false 
         }
     }
 }
