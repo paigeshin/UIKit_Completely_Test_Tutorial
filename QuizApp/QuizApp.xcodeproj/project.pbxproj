@@ -26,6 +26,8 @@
 		C455AF08286B08EB000D4C64 /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C455AF06286B08EB000D4C64 /* WrongAnswerCell.xib */; };
 		C455AF0A286B0D08000D4C64 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455AF09286B0D08000D4C64 /* UITableViewExtension.swift */; };
 		C455AF0C286B0D4C000D4C64 /* PresentableAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455AF0B286B0D4C000D4C64 /* PresentableAnswer.swift */; };
+		C48A6C73287078CB00347F82 /* QuestionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C72287078CB00347F82 /* QuestionPresenterTests.swift */; };
+		C48A6C752870792300347F82 /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C742870792300347F82 /* QuestionPresenter.swift */; };
 		C4F29BAE286C5EDA004AE81A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F29BAD286C5EDA004AE81A /* QuizEngine.framework */; };
 		C4F29BAF286C5EDA004AE81A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4F29BAD286C5EDA004AE81A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C4F29BB9286C5F26004AE81A /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTest.swift */; };
@@ -94,6 +96,8 @@
 		C455AF06286B08EB000D4C64 /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
 		C455AF09286B0D08000D4C64 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		C455AF0B286B0D4C000D4C64 /* PresentableAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswer.swift; sourceTree = "<group>"; };
+		C48A6C72287078CB00347F82 /* QuestionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTests.swift; sourceTree = "<group>"; };
+		C48A6C742870792300347F82 /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
 		C4F29BAD286C5EDA004AE81A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		C4F29BBA286C5F9B004AE81A /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 				C4F29BC0286C85AC004AE81A /* ViewControllerFactory.swift */,
 				C4F29BC4286C8621004AE81A /* iOSViewControllerFactory.swift */,
 				C4F29BCA286C9C7E004AE81A /* ResultsPresenter.swift */,
+				C48A6C742870792300347F82 /* QuestionPresenter.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				C4F29BC2286C85CA004AE81A /* iOSViewControllerFactory.swift */,
 				C4F29BC8286C9C10004AE81A /* ResultsHelper.swift */,
 				C40B640F286CA0FC0091352F /* ResultsPresenterTest.swift */,
+				C48A6C72287078CB00347F82 /* QuestionPresenterTests.swift */,
 			);
 			path = QuizAppTests;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				C455AEF8286AEC91000D4C64 /* SceneDelegate.swift in Sources */,
 				C4F29BBF286C7DA9004AE81A /* Question.swift in Sources */,
 				C455AEFC286AF123000D4C64 /* ResultsViewController.swift in Sources */,
+				C48A6C752870792300347F82 /* QuestionPresenter.swift in Sources */,
 				C4F29BC5286C8621004AE81A /* iOSViewControllerFactory.swift in Sources */,
 				C4F29BBB286C5F9B004AE81A /* NavigationControllerRouter.swift in Sources */,
 				C455AF0A286B0D08000D4C64 /* UITableViewExtension.swift in Sources */,
@@ -373,6 +380,7 @@
 				C4F29BC3286C85CA004AE81A /* iOSViewControllerFactory.swift in Sources */,
 				C455AEFA286AF0B1000D4C64 /* ResultsViewControllerTest.swift in Sources */,
 				C455AF00286B03F0000D4C64 /* TableViewHelpers.swift in Sources */,
+				C48A6C73287078CB00347F82 /* QuestionPresenterTests.swift in Sources */,
 				C40B6410286CA0FC0091352F /* ResultsPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
