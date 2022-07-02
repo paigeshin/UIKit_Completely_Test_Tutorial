@@ -33,7 +33,6 @@
 		C4F29BB9286C5F26004AE81A /* NavigationControllerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTests.swift */; };
 		C4F29BBB286C5F9B004AE81A /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BBA286C5F9B004AE81A /* NavigationControllerRouter.swift */; };
 		C4F29BBD286C7712004AE81A /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BBC286C7712004AE81A /* QuestionTest.swift */; };
-		C4F29BBF286C7DA9004AE81A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BBE286C7DA9004AE81A /* Question.swift */; };
 		C4F29BC1286C85AC004AE81A /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BC0286C85AC004AE81A /* ViewControllerFactory.swift */; };
 		C4F29BC3286C85CA004AE81A /* iOSViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BC2286C85CA004AE81A /* iOSViewControllerFactory.swift */; };
 		C4F29BC5286C8621004AE81A /* iOSViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BC4286C8621004AE81A /* iOSViewControllerFactory.swift */; };
@@ -102,7 +101,6 @@
 		C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTests.swift; sourceTree = "<group>"; };
 		C4F29BBA286C5F9B004AE81A /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		C4F29BBC286C7712004AE81A /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
-		C4F29BBE286C7DA9004AE81A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C4F29BC0286C85AC004AE81A /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		C4F29BC2286C85CA004AE81A /* iOSViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactory.swift; sourceTree = "<group>"; };
 		C4F29BC4286C8621004AE81A /* iOSViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 				C42ED60728647EC100E0F04F /* Info.plist */,
 				C455AF0B286B0D4C000D4C64 /* PresentableAnswer.swift */,
 				C4F29BBA286C5F9B004AE81A /* NavigationControllerRouter.swift */,
-				C4F29BBE286C7DA9004AE81A /* Question.swift */,
 				C4F29BC0286C85AC004AE81A /* ViewControllerFactory.swift */,
 				C4F29BC4286C8621004AE81A /* iOSViewControllerFactory.swift */,
 				C4F29BCA286C9C7E004AE81A /* ResultsPresenter.swift */,
@@ -358,7 +355,6 @@
 				C455AF03286B0667000D4C64 /* CorrectAnswerCell.swift in Sources */,
 				C455AF07286B08EB000D4C64 /* WrongAnswerCell.swift in Sources */,
 				C455AEF8286AEC91000D4C64 /* SceneDelegate.swift in Sources */,
-				C4F29BBF286C7DA9004AE81A /* Question.swift in Sources */,
 				C455AEFC286AF123000D4C64 /* ResultsViewController.swift in Sources */,
 				C48A6C752870792300347F82 /* QuestionPresenter.swift in Sources */,
 				C4F29BC5286C8621004AE81A /* iOSViewControllerFactory.swift in Sources */,

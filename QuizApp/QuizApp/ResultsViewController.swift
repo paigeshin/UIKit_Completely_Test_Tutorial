@@ -11,8 +11,8 @@ import UIKit
 class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var headerLabel: UILabel!
-    private var summary = ""
-    private var answers = [PresentableAnswer]()
+    private(set) var summary = ""
+    private(set) var answers = [PresentableAnswer]()
     @IBOutlet weak var tableView: UITableView!
     
     convenience init(summary: String, answers: [PresentableAnswer]) {
