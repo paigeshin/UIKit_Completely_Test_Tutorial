@@ -30,7 +30,7 @@
 		C48A6C752870792300347F82 /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A6C742870792300347F82 /* QuestionPresenter.swift */; };
 		C4F29BAE286C5EDA004AE81A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F29BAD286C5EDA004AE81A /* QuizEngine.framework */; };
 		C4F29BAF286C5EDA004AE81A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4F29BAD286C5EDA004AE81A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C4F29BB9286C5F26004AE81A /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTest.swift */; };
+		C4F29BB9286C5F26004AE81A /* NavigationControllerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTests.swift */; };
 		C4F29BBB286C5F9B004AE81A /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BBA286C5F9B004AE81A /* NavigationControllerRouter.swift */; };
 		C4F29BBD286C7712004AE81A /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BBC286C7712004AE81A /* QuestionTest.swift */; };
 		C4F29BBF286C7DA9004AE81A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F29BBE286C7DA9004AE81A /* Question.swift */; };
@@ -99,7 +99,7 @@
 		C48A6C72287078CB00347F82 /* QuestionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTests.swift; sourceTree = "<group>"; };
 		C48A6C742870792300347F82 /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
 		C4F29BAD286C5EDA004AE81A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
+		C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTests.swift; sourceTree = "<group>"; };
 		C4F29BBA286C5F9B004AE81A /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		C4F29BBC286C7712004AE81A /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
 		C4F29BBE286C7DA9004AE81A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				C455AEF12869F107000D4C64 /* QuestionViewControllerTest.swift */,
 				C455AEF9286AF0B1000D4C64 /* ResultsViewControllerTest.swift */,
 				C455AEFF286B03F0000D4C64 /* TableViewHelpers.swift */,
-				C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTest.swift */,
+				C4F29BB8286C5F25004AE81A /* NavigationControllerRouterTests.swift */,
 				C4F29BBC286C7712004AE81A /* QuestionTest.swift */,
 				C4F29BC2286C85CA004AE81A /* iOSViewControllerFactory.swift */,
 				C4F29BC8286C9C10004AE81A /* ResultsHelper.swift */,
@@ -376,7 +376,7 @@
 				C4F29BC9286C9C10004AE81A /* ResultsHelper.swift in Sources */,
 				C455AEF22869F107000D4C64 /* QuestionViewControllerTest.swift in Sources */,
 				C4F29BBD286C7712004AE81A /* QuestionTest.swift in Sources */,
-				C4F29BB9286C5F26004AE81A /* NavigationControllerRouterTest.swift in Sources */,
+				C4F29BB9286C5F26004AE81A /* NavigationControllerRouterTests.swift in Sources */,
 				C4F29BC3286C85CA004AE81A /* iOSViewControllerFactory.swift in Sources */,
 				C455AEFA286AF0B1000D4C64 /* ResultsViewControllerTest.swift in Sources */,
 				C455AF00286B03F0000D4C64 /* TableViewHelpers.swift in Sources */,
